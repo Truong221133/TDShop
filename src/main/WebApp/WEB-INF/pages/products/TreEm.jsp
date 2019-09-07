@@ -147,20 +147,18 @@
   </div>
         </div>
     </div>
-
-  </header>
-  <form id="sp">
-  	<h3 ><p align="center">TOP SẢN PHẨM MỚI</p></h3>
-  	<div id="sp1" style="width: 49px; height: 52px; ">
-  		<img src="img/ " alt>
-  	</div>
-  	<div id="sp2" style="width: 58px; height: 50px; ">
-  		<img src="img/ " alt="">
-  	</div>
-  	
-  	<div id="sp3" style="width: 54px; height: 52px; ">
-  		<img src="img/ " alt>
-  	</div>
-  </form>
+</head>
+<body>
+	<form action="">
+		<div id="treem1">
+			<img src="img/ " alt>
+		</div>
+		<div id="treem2">
+			<img src="img/ " alt>
+		</div>
+		<div id="treem3">
+			<img src="img/ " alt>
+		</div>
+	</form>
 </body>
 </html>
