@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generated Sep 5, 2019, 8:31:49 PM by Hibernate Tools 5.2.12.Final --><!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping auto-import="true" default-access="property" default-cascade="none" default-lazy="true">
+    <class catalog="dbweb" dynamic-insert="false" dynamic-update="false" mutable="true" name="org.DuAn.WebBanHangThoiTrang.Entity.Accounts" optimistic-lock="version" polymorphism="implicit" select-before-update="false" table="accounts">
+        <id name="userName" type="string">
+            <column length="20" name="User_Name"/>
+            <generator class="assigned"/>
+        </id>
+        <property generated="never" lazy="false" name="password" optimistic-lock="true" type="string" unique="false">
+            <column length="20" name="Password" not-null="true"/>
+        </property>
+        <property generated="never" lazy="false" name="active" optimistic-lock="true" type="boolean" unique="false">
+            <column name="Active" not-null="true"/>
+        </property>
+        <property generated="never" lazy="false" name="userRole" optimistic-lock="true" type="string" unique="false">
+            <column length="20" name="User_Role" not-null="true"/>
+        </property>
+    </class>
+</hibernate-mapping>

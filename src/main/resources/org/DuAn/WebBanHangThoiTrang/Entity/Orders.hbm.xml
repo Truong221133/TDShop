@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generated Sep 5, 2019, 8:31:49 PM by Hibernate Tools 5.2.12.Final --><!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping auto-import="true" default-access="property" default-cascade="none" default-lazy="true">
+    <class catalog="dbweb" dynamic-insert="false" dynamic-update="false" mutable="true" name="org.DuAn.WebBanHangThoiTrang.Entity.Orders" optimistic-lock="version" polymorphism="implicit" select-before-update="false" table="orders">
+        <id name="id" type="string">
+            <column length="50" name="ID"/>
+            <generator class="assigned"/>
+        </id>
+        <property generated="never" lazy="false" name="amount" optimistic-lock="true" type="double" unique="false">
+            <column name="Amount" not-null="true" precision="22" scale="0"/>
+        </property>
+        <property generated="never" lazy="false" name="customerAdress" optimistic-lock="true" type="string" unique="false">
+            <column name="Customer_Adress" not-null="true"/>
+        </property>
+        <property generated="never" lazy="false" name="customerEmail" optimistic-lock="true" type="string" unique="false">
+            <column name="Customer_Email" not-null="true"/>
+        </property>
+        <property generated="never" lazy="false" name="customerName" optimistic-lock="true" type="string" unique="false">
+            <column name="Customer_Name" not-null="true"/>
+        </property>
+        <property generated="never" lazy="false" name="customerPhone" optimistic-lock="true" type="string" unique="false">
+            <column name="Customer_Phone" not-null="true"/>
+        </property>
+        <property generated="never" lazy="false" name="orderDate" optimistic-lock="true" type="timestamp" unique="false">
+            <column length="19" name="Order_Date" not-null="true"/>
+        </property>
+        <property generated="never" lazy="false" name="orderNum" optimistic-lock="true" type="int" unique="false">
+            <column name="Order_Num" not-null="true" unique="true"/>
+        </property>
+        <set embed-xml="true" fetch="select" inverse="true" lazy="true" mutable="true" name="orderDetailses" optimistic-lock="true" sort="unsorted" table="order_details">
+            <key on-delete="noaction">
+                <column length="50" name="Order_ID" not-null="true"/>
+            </key>
+            <one-to-many class="org.DuAn.WebBanHangThoiTrang.Entity.OrderDetails" embed-xml="true" not-found="exception"/>
+        </set>
+    </class>
+</hibernate-mapping>

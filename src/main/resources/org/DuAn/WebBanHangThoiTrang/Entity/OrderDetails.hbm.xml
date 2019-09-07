@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generated Sep 5, 2019, 8:31:49 PM by Hibernate Tools 5.2.12.Final --><!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping auto-import="true" default-access="property" default-cascade="none" default-lazy="true">
+    <class catalog="dbweb" dynamic-insert="false" dynamic-update="false" mutable="true" name="org.DuAn.WebBanHangThoiTrang.Entity.OrderDetails" optimistic-lock="version" polymorphism="implicit" select-before-update="false" table="order_details">
+        <id name="id" type="string">
+            <column length="50" name="ID"/>
+            <generator class="assigned"/>
+        </id>
+        <many-to-one class="org.DuAn.WebBanHangThoiTrang.Entity.Orders" embed-xml="true" fetch="select" insert="true" name="orders" not-found="exception" optimistic-lock="true" unique="false" update="true">
+            <column length="50" name="Order_ID" not-null="true"/>
+        </many-to-one>
+        <many-to-one class="org.DuAn.WebBanHangThoiTrang.Entity.Products" embed-xml="true" fetch="select" insert="true" name="products" not-found="exception" optimistic-lock="true" unique="false" update="true">
+            <column length="20" name="Product_ID" not-null="true"/>
+        </many-to-one>
+        <property generated="never" lazy="false" name="amount" optimistic-lock="true" type="double" unique="false">
+            <column name="Amount" not-null="true" precision="22" scale="0"/>
+        </property>
+        <property generated="never" lazy="false" name="price" optimistic-lock="true" type="double" unique="false">
+            <column name="Price" not-null="true" precision="22" scale="0"/>
+        </property>
+        <property generated="never" lazy="false" name="quanity" optimistic-lock="true" type="int" unique="false">
+            <column name="Quanity" not-null="true"/>
+        </property>
+    </class>
+</hibernate-mapping>
