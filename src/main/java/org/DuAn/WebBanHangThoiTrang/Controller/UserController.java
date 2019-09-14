@@ -51,7 +51,17 @@ public class UserController {
 	
 	@RequestMapping(value="/signup", method = RequestMethod.GET)
 	public String signupFormAction(Model model) {
-		return "users/Home";
+		return "users/RegisterPage";
+	}
+	
+	@RequestMapping(value="/signin", method = RequestMethod.GET)
+	public String signinFormAction(Model model) {
+		return "users/Signin";
+	}
+	
+	@RequestMapping(value="/home", method = RequestMethod.GET)
+	public String homeFormAction(Model model) {
+		return "defaults/Home";
 	}
 	
 	@SuppressWarnings({ "rawtypes", "unchecked" })

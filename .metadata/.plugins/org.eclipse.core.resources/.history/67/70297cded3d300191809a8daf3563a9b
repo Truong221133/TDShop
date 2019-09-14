@@ -1,0 +1,25 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+
+<script src="js/libs/bootstrap/js/bootstrap.min.js"></script>
+
+<link href="styles/libs/users/Signin.css" rel="stylesheet" />
+<script src="js/users/Signin.js" type="text/javascript"></script>
+</head>
+<body>
+	<div id="login">
+  <form>
+    <h1>Sign In</h1>
+    <input type="text" placeholder="Username">
+    <input type="password" placeholder="Password">
+    <button>Sign in</button>
+  </form>
+</div>
+  
+</body>
+</html>
