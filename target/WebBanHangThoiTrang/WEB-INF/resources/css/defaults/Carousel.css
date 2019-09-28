@@ -1,0 +1,14 @@
+@charset "UTF-8";
+
+.container{
+   width: 100%;
+   height: 400px;
+   overflow: hidden; // tránh lỗi hình quá lớn đè lên nội dung các phần khác
+   padding-left: 15px;
+   box-sizing: border-box; // cố định kích thước của slide
+}
+
+.carousel-inner{
+		width: 100%;
+		height: 350px;
+}

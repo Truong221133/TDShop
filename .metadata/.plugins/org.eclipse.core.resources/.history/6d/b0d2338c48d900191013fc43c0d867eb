@@ -1,0 +1,52 @@
+@charset "ISO-8859-1";
+
+html, body {
+    overflow-x: hidden;
+}
+
+*{
+	margin: 0;
+	padding:0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #cfcaca;
+  margin: 0;
+  display: block;
+  
+
+body {
+    letter-spacing: 1px;
+} 
+
+* {
+  box-sizing: border-box;
+}
+
+.header {
+	background-color: #FFFFFF;
+    border-color: #EEEEEE;
+	padding: 1px 0 0;
+    position: relative;
+	z-index: 4;
+	border-bottom: 1px solid transparent;
+	display: block;
+	
+}
+
+tong1 {
+	background-color: white;
+	margin-left: 200px;
+	margin-right:200px;
+}
+
+.wel welcom{
+	text-align: center;
+	font-size: 50px;
+	font-color: rightwards;
+}
+
+.hotline{
+	border-line: 1px solid;
+}

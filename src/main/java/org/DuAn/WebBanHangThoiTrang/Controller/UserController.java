@@ -64,6 +64,21 @@ public class UserController {
 		return "defaults/Home";
 	}
 	
+	@RequestMapping(value="/nam", method = RequestMethod.GET)
+	public String namFormAction(Model model) {
+		return "products/Nam";
+	}
+	
+	@RequestMapping(value="/nu", method = RequestMethod.GET)
+	public String nuFormAction(Model model) {
+		return "products/Nu";
+	}
+	
+	@RequestMapping(value="/treem", method = RequestMethod.GET)
+	public String treemFormAction(Model model) {
+		return "products/TreEm";
+	}
+	
 	@SuppressWarnings({ "rawtypes", "unchecked" })
 	private void setHibernateDao()  {
 		dao = new WebBHTTHibernateDao();

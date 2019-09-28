@@ -8,20 +8,23 @@
 
 <script src="js/libs/bootstrap/js/bootstrap.min.js"></script>
 
-<link href="styles/libs/users/Signin.css" rel="stylesheet" />
+<!--  <link href="styles/libs/users/Signin.css" rel="stylesheet" />-->
 <script src="js/users/Signin.js" type="text/javascript"></script>
 </head>
 <body>
 
-	<div class="container">
-		<button id="login-button">log in</button></br>
-		<div class="login-container">
-			<form class="login-form">
-				<input type="text" placeholder="Username"></br></br> 
-				<input type="password" placeholder="Password"></br></br> 
-				<input class="input" type="submit" value="SUBMIT" style="width: 72px; height: 33px;"/>
-			</form>
-		</div>
+	<div class="form-container sign-in-container">
+		<form action="#">
+			<h1>Sign in</h1>
+			<div class="social-container">
+				<a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+				<a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+				<a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+			</div>
+			<input type="email" placeholder="Email" />
+			<input type="password" placeholder="Password" />
+			<button>Sign In</button>
+		</form>
 	</div>
 
 </body>

@@ -1,0 +1,46 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<link rel="stylesheet" href="styles/defaults/Header.css">
+<div class="header-top">
+<ul class="nav">
+  <li class="nav-item">
+    <a class="nav-link">Hotline:(028)-99999999</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link">Free ship toàn quốc với đơn hàng nguyên giá >=500.000đ</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link">Link</a>
+  </li>
+</ul>
+</div>
+<div class="header">
+<nav class="navbar navbar-expand-sm bg-light navbar-default">
+  <!-- Brand/logo -->
+  <a class="navbar-brand" href="#">
+  	<img src="img/DN.jpg" />
+  </a>
+  
+  <!-- Links -->
+  <ul class="navbar-nav">
+    <li class="nav-item">
+      <a class="nav-link" href="#">Nam</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Nu</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Tre Em</a>
+    </li>
+    <li>
+    
+    <form class="form-inline">
+    <div class="input-group">
+      <input type="text" class="form-control" placeholder="Tim Kiem">
+      <i class="fas fa-shopping-bag"></i>
+    </div>
+  </form>
+    </li>
+  </ul>
+</nav>
+</div>
